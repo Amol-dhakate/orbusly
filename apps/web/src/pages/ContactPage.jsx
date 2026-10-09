@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle2 } from 'lucide-react';
+import { Globe, Mail, MapPin, Send, CheckCircle2 } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
 import Seo from '@/components/Seo';
@@ -12,14 +12,16 @@ import { services } from '@/data/content';
 
 const CONTACT_BLOCKS = [
 	{ icon: Mail, label: 'Email', value: 'info@orbusly.com', href: 'mailto:info@orbusly.com' },
-	{ icon: Phone, label: 'Phone', value: '+91 85168 94335', href: 'tel:+918516894335' },
 	{
 		icon: MapPin,
 		label: 'Headquarters',
 		value: 'Business Park, AB Road, Indore – 452012, India',
 	},
-	{ icon: MapPin, label: 'Delivery Center', value: 'Indore' },
-	{ icon: Clock, label: 'Service area', value: 'Serving clients globally' },
+	{
+		icon: Globe,
+		label: 'Presence Globally',
+		value: '3 Wyn Street, Campbelltown SA 5074, Australia',
+	},
 ];
 
 export default function ContactPage() {
@@ -44,12 +46,12 @@ export default function ContactPage() {
 				<title>Contact Orbusly Solutions — Start Your Software Project</title>
 				<meta
 					name="description"
-					content="Contact Orbusly Solutions in Indore, India for AI transformation, web and mobile development, data analytics, retail, healthcare, and enterprise software. Email info@orbusly.com or call +91 85168 94335."
+					content="Contact Orbusly Solutions in Indore, India for AI transformation, web and mobile development, data analytics, retail, healthcare, and enterprise software. Email info@orbusly.com."
 				/>
 			</Helmet>
 			<Seo
 				title="Contact Orbusly Solutions — Start Your Software Project"
-				description="Contact Orbusly Solutions in Indore, India for AI transformation, web and mobile development, data analytics, retail, healthcare, and enterprise software. Email info@orbusly.com or call +91 85168 94335."
+				description="Contact Orbusly Solutions in Indore, India for AI transformation, web and mobile development, data analytics, retail, healthcare, and enterprise software. Email info@orbusly.com."
 				url="https://orbusly.com/contact"
 				siteName="Orbusly Solutions Private Limited"
 			/>

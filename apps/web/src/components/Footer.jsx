@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Mail, Phone, MapPin } from 'lucide-react';
+import { Globe, Mail, MapPin } from 'lucide-react';
 import { LOGO_URL, services } from '@/data/content';
 
 export default function Footer() {
@@ -65,22 +65,26 @@ export default function Footer() {
 								</a>
 							</li>
 							<li className="flex items-start gap-2.5">
-								<Phone className="mt-0.5 h-4 w-4 shrink-0 text-azure" />
-								<a href="tel:+918516894335" className="transition-colors hover:text-white">
-									+91 85168 94335
-								</a>
-							</li>
-							<li className="flex items-start gap-2.5">
 								<MapPin className="mt-0.5 h-4 w-4 shrink-0 text-azure" />
 								<span>
+									<span className="block text-[10px] font-semibold uppercase tracking-[0.16em] text-azure">
+										Headquarters
+									</span>
 									Business Park, AB Road,
 									<br />
 									Indore 452012, India
 								</span>
 							</li>
 							<li className="flex items-start gap-2.5">
-								<span className="mt-0.5 h-4 w-4 shrink-0 text-azure" aria-hidden="true">↗</span>
-								<span>Delivery center in Indore · Serving clients globally</span>
+								<Globe className="mt-0.5 h-4 w-4 shrink-0 text-azure" />
+								<span>
+									<span className="block text-[10px] font-semibold uppercase tracking-[0.16em] text-azure">
+										Presence Globally
+									</span>
+									3 Wyn Street,
+									<br />
+									Campbelltown SA 5074, Australia
+								</span>
 							</li>
 						</ul>
 					</div>
