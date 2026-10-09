@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Globe, Mail, Phone, MapPin } from 'lucide-react';
+import { Globe, Mail, MapPin } from 'lucide-react';
 import { LOGO_URL, services } from '@/data/content';
 
 export default function Footer() {
@@ -62,12 +62,6 @@ export default function Footer() {
 								<Mail className="mt-0.5 h-4 w-4 shrink-0 text-azure" />
 								<a href="mailto:info@orbusly.com" className="transition-colors hover:text-white">
 									info@orbusly.com
-								</a>
-							</li>
-							<li className="flex items-start gap-2.5">
-								<Phone className="mt-0.5 h-4 w-4 shrink-0 text-azure" />
-								<a href="tel:+918516894335" className="transition-colors hover:text-white">
-									+91 85168 94335
 								</a>
 							</li>
 							<li className="flex items-start gap-2.5">
