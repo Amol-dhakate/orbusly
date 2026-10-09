@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Helmet } from 'react-helmet';
-import { Mail, Phone, MapPin, Clock, Send, CheckCircle2 } from 'lucide-react';
+import { Globe, Mail, Phone, MapPin, Send, CheckCircle2 } from 'lucide-react';
 import PageHero from '@/components/PageHero';
 import Reveal from '@/components/Reveal';
 import Seo from '@/components/Seo';
@@ -18,8 +18,11 @@ const CONTACT_BLOCKS = [
 		label: 'Headquarters',
 		value: 'Business Park, AB Road, Indore – 452012, India',
 	},
-	{ icon: MapPin, label: 'Delivery Center', value: 'Indore' },
-	{ icon: Clock, label: 'Service area', value: 'Serving clients globally' },
+	{
+		icon: Globe,
+		label: 'Presence Globally',
+		value: '3 Wyn Street, Campbelltown SA 5074, Australia',
+	},
 ];
 
 export default function ContactPage() {
